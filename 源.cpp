@@ -1,16 +1,25 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+int x;
+int f();
+int main(void)
 {
-	int day = 0;
-	scanf_s("%d", day);
-	switch (day)
-	{
-	case 1:
-		printf("1\n");
-		break;
-	case 2:
-		printf("2\n");
-		break;
-	}
-	return 0;
+    int a = 1;
+
+    x = a;
+    a = f();
+    {
+        int b = 2;
+        b = a + b;
+        x = x + b;
+    }
+    printf("%d %d", a, x);              /*%d和%d之间有1个空格*/
+
+    return 0;
+}
+
+int f()
+{
+    int x = 4;
+
+    return x;
 }
