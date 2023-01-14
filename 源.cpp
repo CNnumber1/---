@@ -1,35 +1,44 @@
 //#include<stdio.h>
 //int main(void)
 //{
-//    int  a = 2, b = -1, c = 2;
+//    int x = 1, a = 0, b = 0;
 //
-//    if (a < b)
-//        if (b < 0)
-//            c = 0;
-//        else  c++;
-//    printf("%d\n", c);
+//    switch (x)
+//    {
+//    case 0:   b++;
+//    case 1:   a++;
+//    case 2:   a++; b++;
+//    }
+//    printf("a=%d,b=%d\n", a, b);
 //
-//    return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//    int a = 2, b = -1, c = 2;
-//    if (a)
-//        if (b < 0) c = 0;
-//        else c++;
-//    printf("%d\n", c);
 //    return 0;
 //}
 //#include <stdio.h>
 //int main(void)
 //{
-//    float x, y;
-//    scanf_s("%f", &x);
-//    if (x < 0.0)y = 0.0;
-//    else if ((x < 5.0) && (x != 2.0))y = 1.0 / (x + 2.0);
-//    else if (x < 10.0)y = 1.0 / x;
-//    else y = 10.0;
-//    printf("%f\n", y);
+//    int i;
+//    for (i = 0; i < 3; i++)
+//        switch (i)
+//        {
+//        case 1: printf("%d", i);
+//        case 2: printf("%d", i);
+//        default: printf("%d", i);
+//        }
+//    return 0;
+//}
+//#include <stdio.h>
+//int main(void)
+//{
+//    int m, k = 0, s = 0;
+//    for (m = 1; m <= 4; m++) {
+//        switch (m % 4) {
+//        case 0:
+//        case 1: s += m; break;
+//        case 2:
+//        case 3: s -= m; break;
+//        }
+//        k += s;
+//    }
+//    printf("%d\n", k);
 //    return 0;
 //}
